@@ -4,7 +4,7 @@ This tool automatically fixes typos and minor errors in BIP39 seed.
 It is compatible with Bitcoin, Ethereum and many others.
 It does not require the Internet and can be used completely offline.
 
-![screenshot](https://github.com/un1t/seedrecovery/raw/master/schreenshot1.png "Screenshot")
+![screenshot](https://github.com/un1t/seedrecovery/raw/master/usage.gif "Screenshot")
 
 # How to build from source
 
