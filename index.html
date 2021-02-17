@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="vendor/w3.css">
+	<script src="vendor/bip39.browser.js"></script>
+	<script src="vendor/js-levenshtein.js"></script>
+	<script src="vendor/jquery-3.5.1.min.js"></script>
+	<script src="main.js"></script>
+
+	<title>BIP39 Invalid Seed Recovery Tool</title>
+</head>
+<body>
+
+<div class="w3-container w3-teal">
+  <h1>BIP39 Invalid Seed Recovery Tool</h1>
+</div>
+
+<div class="w3-container">
+	<h2 class="w3-big">Fix typos and minor errors in your Bitcoin/Ethereum/etc seed</h2>
+
+	<p>
+		This tool automatically fixes typos and minor errors in BIP39 seed.<br>
+		It is compatible with Bitcoin, Ethereum and many others.<br>
+		It does not require the Internet and can be used completely offline.<br>
+	</p>
+
+	<br>
+	Seed:<br>
+	<textarea class="w3-input w3-border" name="seed" id="id_seed" autocomplete="off" class="ym-disable-keys ym-disable-submit"></textarea>
+
+	<br>
+	<button class="w3-button w3-blue" id="id_recovery_button">Recover</button>
+	<!-- <button class="w3-button w3-blue" id="id_generate_button">Generate</button> -->
+
+
+	<div id="id_messages">
+	</div>
+
+	<div id="id_variants" class="ym-hide-content">
+	</div>
+</div>
+<div class="w3-container w3-pale-yellow w3-padding" style="margin-top: 50px">
+	<a href="mailto:ishalyapin@gmail.com">Send Feedback</a> <br><br>
+	If you find this helpful consider donating<br>
+	BTC: bc1q52cwq4q0q5mqdry6rpk5xr98vm5z9sdle9lkc8<br>
+	ETH: 0x4619BA7A812B8749F0B2736059525624895b6bA1
+</div>
+
+</body>
+</html>

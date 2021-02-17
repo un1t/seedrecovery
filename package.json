@@ -1,0 +1,20 @@
+{
+  "name": "seedrecovery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Ilya Shalyapin",
+    "email": "ishalyapin@gmail.com",
+    "url": "https://github.com/un1t"
+  },
+  "license": "",
+  "dependencies": {
+    "bip39": "^3.0.3",
+    "browserify": "^17.0.0",
+    "js-levenshtein": "^1.1.6"
+  }
+}
