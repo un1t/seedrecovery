@@ -8,7 +8,7 @@ It does not require the Internet and can be used completely offline.
 # How to build from source
 
 ``` 
-make install
+make
 ``` 
 
 
