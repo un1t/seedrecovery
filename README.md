@@ -1,8 +1,9 @@
 # BIP39 Invalid Seed Recovery Tool
 
 This tool automatically fixes typos and minor errors in BIP39 seed.  
-It is compatible with Bitcoin, Ethereum and many others.  
-It does not require the Internet and can be used completely offline.
+If you know which word exactly is incorrect enter only this word and set "Ignore checksum" option.  
+For Electrum Bitcoin Wallet set "Ignore checksum" option.  
+If you need to enter more than one word use it offline.
 
 
 # How to build from source
