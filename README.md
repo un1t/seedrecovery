@@ -22,7 +22,7 @@ Open **index.html** and paste a seed, then click "Recover" button.
 
 # Download
 
-[Release v.1.0.0](https://github.com/un1t/seedrecovery/releases/tag/v1.0.0)
+[Release v.1.0.1](https://github.com/un1t/seedrecovery/releases/tag/v1.0.1)
 
 
 # Donations
