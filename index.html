@@ -24,14 +24,19 @@
 
 	<p>
 		This tool automatically fixes typos and minor errors in BIP39 seed.<br>
-		It is compatible with Bitcoin, Ethereum and many others.<br>
-		It does not require the Internet and can be used completely offline.<br>
+		If you know which word exactly is incorrect enter only this word and set "Ignore checksum" option.<br>
+		For Electrum Bitcoin Wallet set "Ignore checksum" option.<br>
+		If you need to enter more than one word use it offline.<br>
 	</p>
 
 	<br>
 	Seed:<br>
 	<textarea class="w3-input w3-border" name="seed" id="id_seed" autocomplete="off" class="ym-disable-keys ym-disable-submit"></textarea>
 
+	<br>
+	<input type="checkbox" class="w3-check" name="ignore_checksum" id="id_ignore_checksum"> Ignore checksum
+
+	<br>
 	<br>
 	<button class="w3-button w3-blue" id="id_recovery_button">Recover</button>
 	<!-- <button class="w3-button w3-blue" id="id_generate_button">Generate</button> -->

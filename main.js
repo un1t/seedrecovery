@@ -42,8 +42,11 @@ function recover() {
 		showErrorMessage('Enter your seed.')
 		return
 	}
+	const ignoreChecksum = $('#id_ignore_checksum').prop('checked')
 
-	const possibleWords = bip39.wordlists.english;
+	const possibleWords = bip39.wordlists.english
+	const possibleWordsSet = new Set(possibleWords)
+
 	const seedWords = seed.trim().split(/\s+/)
 	for (const i in seedWords) {
 		var seedWord = seedWords[i]
@@ -60,7 +63,10 @@ function recover() {
 				continue
 			}
 
-			var isValid = bip39.validateMnemonic(newSeed)
+			var isValid = setDiff(new Set(newSeedWords), possibleWordsSet).size == 0
+			if (!ignoreChecksum && !bip39.validateMnemonic(newSeed)) {
+				isValid = false
+			}
 			if (isValid) {
 				variantsWithDistance.push([distance, newSeed])
 			}
@@ -121,4 +127,8 @@ function strDiff(s1, s2) {
 		}
 	}
 	return diff;
+}
+
+function setDiff(set1, set2) {
+	return new Set([...set1].filter(x => !set2.has(x)))
 }
