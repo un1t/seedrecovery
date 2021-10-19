@@ -1,11 +1,10 @@
-install:
+.PHONY: dist
+
+all: node_modules vendor dist
+
+node_modules:
 	npm i
 	make vendor
-
-clean:
-	rm -rf node_modules
-	rm -rf vendor
-	rm -rf dist
 
 vendor:
 	rm -rf ./vendor
@@ -23,3 +22,8 @@ dist:
 	cp index.html dist/
 	cp main.js dist/
 	zip dist.zip -r dist/
+
+clean:
+	rm -rf node_modules
+	rm -rf vendor
+	rm -rf dist
